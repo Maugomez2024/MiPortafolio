@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <title>Mi Portafolio</title>
+</head>
+<body>
+     <nav> 
+        <h1>Mauricio Gómez</h1>
+        <ul class="navegacion">
+            <li><a href="#about" class="nav-link">Acerca de mi</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li><a href="#projects" class="nav-link">Proyectos</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+     </nav> 
+    
+    <section class="hero" id="about">
+        <img src="./assets/images/mifoto.jpg" alt="Mauricio Gómez" loading="lazy" class="hero-img" />
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">About me</h2>
+                <p class="bio-text">
+                Hola mi nombre es Mauricio Gómez, nacido en la ciudad de El Salvador llamado el pulgarcito de centro America, soy salvadoreño de nacimiento; me considero una persona que le fascina el mundo de la informática es decir soy una persona autodidacta.
+                </p>    
+            </div>
+    </section> 
+
+    <section class="more-about">
+        <h2>More about Me</h2>
+        <p>Mauricio, desde temprana edad, se sumergió en el fascinante mundo de la informática, cautivado por la capacidad de las máquinas para transformar ideas en realidad. Autodidacta por naturaleza, devoraba libros y tutoriales en línea para dominar diversos lenguajes de programación. Con una insaciable sed de conocimiento, experimentaba con códigos y algoritmos, explorando cada rincón del vasto universo digital. Su pasión por la programación lo llevó a desarrollar habilidades excepcionales en el diseño de software y sistemas, convirtiéndolo en un talento codiciado. Su historia es un testimonio del poder del autodidactismo y la pasión en el mundo de la informática.</p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My top Skills</h2>
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="./assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card"
+                />
+                <img src="./assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card"
+                />
+                <img src="./assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card"
+                />
+            </div>
+         <div class="second-set animate__animated animate__pulse">
+                <img src="./assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card"
+                />
+                <img src="./assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card"
+                />
+                <img src="./assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card"
+                />
+         </div>
+        </div>     
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="./assets/images/Barber_Alura.png" alt="Barber_Alura" loading="lazy" class="project-pic"
+                />
+                <h3 class="project-title">Barber Alura</h3>
+            </div>
+            <div class="project-container project-card">
+                <img src="./assets/images/NumSecreto.png" alt="NumSecreto" loading="lazy" class="project-pic"
+                />
+                <h3 class="project-title">Número Secreto</h3>
+            </div>
+            <div class="project-container project-card">    
+                <img src="./assets/images/Alura_midi.png" alt="Alura_midi" loading="lazy" class="project-pic"
+                />
+                <h3 class="project-title">Alura Midi</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Get in Touch with Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xoqgragk" method="post">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" class="input-field" required />                   
+                    </div>
+            </div>
+                <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" class="input-field" required />
+                </div>
+                <div class="form-control">
+                        <label for="message">message</label>
+                         <textarea id="message" cols="60" rows="10" placeholder="Enter your message" name="message" class="input-field" required></textarea>
+                </div>
+                     <input type="submit" value="submit" id="submit-btn" class="submit-btn" />
+                </form>
+        </div> 
+    </section>
+ <footer>
+    <p class="copy">&copy; Copyright 2024</p>
+    <p class="copy">Designed by Mauricio Gómez</p>     
+ </footer>
+</body>
+</html>
